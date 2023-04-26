@@ -1,0 +1,17 @@
+name: DevOpsGithubActions
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Add a fake 'git' to the PATH to force checkout to download zipball instead
+        uses: actions/checkout@v3
+        with:
+         path: my_private_repository
+      - name: Add a fake 'git' to the PATH to force checkout to download zipball instead
+        shell: cmd
+        run: |
+          cd D:\actions-runner\_work\devopsgithubactions\devopsgithubactions\my_private_repository
+          copy . D:\\xampp\htdocs\devopsgithubactionsweb /y
