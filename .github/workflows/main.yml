@@ -14,4 +14,4 @@ jobs:
         shell: cmd
         run: |
           cd D:\actions-runner\_work\devopsgithubactions\devopsgithubactions\my_private_repository
-          copy . D:\\xampp\htdocs\devopsgithubactionsweb /y
+          copy . D:\xampp\htdocs\devopsgithubactionsweb /y
